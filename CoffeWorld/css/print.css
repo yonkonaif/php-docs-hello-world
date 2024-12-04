@@ -1,0 +1,46 @@
+/* print.css */
+
+/* Apply these styles only when printing */
+@media print {
+    /* Hide everything by default */
+    body * {
+        display: none !important;
+    }
+
+    /* Show only the table and its caption */
+    table, table * {
+        display: table !important;
+        visibility: visible !important;
+    }
+
+    /* Ensure table takes up full width in print */
+    table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    /* Style table headers and cells for print readability */
+    th, td {
+        border: 1px solid #000;
+        padding: 8px;
+        text-align: left;
+    }
+
+    /* Optional: Adjust font size for better readability in print */
+    body {
+        font-size: 14px;
+    }
+
+    /* Ensure the table is centered on the page */
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    /* Ensure the table is visible */
+    table {
+        display: table !important;
+    }
+}
